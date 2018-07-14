@@ -1,0 +1,35 @@
+.background{
+    background-color: #ffe520;
+    margin: 0px;
+    display: flex;
+
+}
+
+.arrows{
+    float: left;
+    opacity: 0.7;
+    height: 650px;
+}
+
+.body{
+    background-color: white;
+    height: 200px;
+    margin-top: 160px;
+    width: 300px;
+    padding-right: 130px;
+    padding-top: 100px;
+}
+
+.logo{
+    height: 120px;
+}
+
+.btn{
+    margin-left: 100px;
+    width: 250px;
+    height: 50px;
+    border-radius: 10%;
+    background-color: black;
+    color: white;
+    font-size: 20px;
+}
