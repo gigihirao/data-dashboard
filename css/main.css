@@ -22,7 +22,7 @@ body {
 }
 
 #logo {
-	width: 220px;
+	width: 230px;
 }
 
 #main {
@@ -42,6 +42,7 @@ body {
 	width: 230px;
 	border-bottom: 1px solid #7f7f7f;
 	padding-bottom: 20px;
+	margin-bottom: 20px;
 	padding-top: 10px;
 }
 
@@ -88,4 +89,33 @@ body {
 .imageSede {
 	width: auto;
 	height: auto;
+}
+
+/* STYLE DA PAGINA TURMA */
+
+#classes {
+	width: 80%;
+}
+
+#buttonsMenu {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 230px;
+
+}
+
+.buttonMenu {
+	padding: 10px;
+	color: #7f7f7f;
+}
+
+.titulosMenu {
+	border-bottom: 1px solid #999999;
+	align-self: flex-start;
+	padding: 5px 5px;
+	color: #595959;
+	margin-top: 10px;
+	width: 80px;
 }
