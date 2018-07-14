@@ -1,3 +1,91 @@
-/*
- * Estilos de tu proyecto
- */
+.teste {
+	border: 1px solid orange;
+}
+
+/* STYLE PADRÃO NAS PAGINAS SEDE, TURMA E ALUNAS */
+
+body {
+	background-color: #f7f7f7;
+	margin: 0;
+	font-family: Comic Sans MS, cursive, sans-serif;
+}
+
+#menu {
+	width: 20%;
+	height: 650px;
+	background-color: #e2e2e2;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-top: 10px;
+	box-shadow: 2px 0px 10px #888888;
+}
+
+#logo {
+	width: 220px;
+}
+
+#main {
+	display: flex;
+}
+
+#photoPerfil {
+	width: 80px;
+	border-radius: 50px;
+	border: 1px solid #ffe521;
+}
+
+#perfil {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	width: 230px;
+	border-bottom: 1px solid #7f7f7f;
+	padding-bottom: 20px;
+	padding-top: 10px;
+}
+
+.name {
+	font-size: 20px;
+	padding-left: 10px;
+	padding-right: 25px;
+}
+
+.icon-angle-down {
+	font-size: 20px;
+	padding-top: 12px;
+}
+
+/* STYLE DA PAGINA SEDE */
+
+.sedes {
+	width: 40%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+
+.optionSedes {
+	border: 1px solid #ffe521;
+	background-color: #ffe521;
+	width: 220px;
+	text-align: center;
+	height: 30px;
+	color: #000;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+}
+
+.imgsSedes {
+	width: 40%;
+	overflow: hidden;
+}
+
+.imageSede {
+	width: auto;
+	height: auto;
+}
