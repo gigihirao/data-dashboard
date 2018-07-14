@@ -97,6 +97,8 @@ body {
 	width: 80%;
 }
 
+/* STYLE DA PAGINA SPRINT */
+
 #buttonsMenu {
 	display: flex;
 	flex-direction: column;
@@ -118,4 +120,31 @@ body {
 	color: #595959;
 	margin-top: 10px;
 	width: 80px;
+}
+
+#display {
+	width: 80%;
+}
+
+#topo {
+	display: flex;
+	justify-content: space-between;
+	height: 50px;
+	align-items: center;
+}
+
+#return {
+	border-bottom: 2px solid #ffe521;
+	padding: 10px;
+
+}
+
+.icon-chevron-right {
+	padding-right: 10px;
+	text-decoration: none;
+	color: #595959;
+}
+
+.nameSede {
+	padding-left: 15px;
 }
