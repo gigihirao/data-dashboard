@@ -11,13 +11,16 @@
     height: 650px;
 }
 
-.body{
+.body{    
     background-color: white;
     height: 200px;
-    margin-top: 160px;
+    margin-top: 200px;
     width: 300px;
     padding-right: 130px;
-    padding-top: 100px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    box-shadow: 6px 6px 10px #4d4908;
+    margin-left: 20px;
 }
 
 .logo{
@@ -28,8 +31,17 @@
     margin-left: 100px;
     width: 250px;
     height: 50px;
-    border-radius: 10%;
-    background-color: black;
+    border-radius: 5px;
+    background-color: #ff4577;
     color: white;
     font-size: 20px;
+    border: none;
+    box-shadow: 2px 2px 4px gray;
+}
+
+a > button{
+    cursor: pointer;
+}
+a > button:hover{
+    opacity: 0.7;
 }
