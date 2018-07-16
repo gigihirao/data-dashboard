@@ -78,7 +78,15 @@ body {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	text-decoration: none;
+	margin-top: 20px;
 
+}
+
+.optionSedes:hover {
+	color: #fff;
+	border: 1px solid #ffffff;
+	background-color: #000000;
 }
 
 .imgsSedes {
@@ -95,6 +103,11 @@ body {
 
 #classes {
 	width: 80%;
+}
+
+
+#nameSede {
+	padding-left: 15px;
 }
 
 /* STYLE DA PAGINA SPRINT */
@@ -143,8 +156,4 @@ body {
 	padding-right: 10px;
 	text-decoration: none;
 	color: #595959;
-}
-
-.nameSede {
-	padding-left: 15px;
 }
