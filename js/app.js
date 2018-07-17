@@ -13,3 +13,9 @@ for (var turma in data[sede]){
 	option.textContent = turma;
 	select.appendChild(option);
 }
+
+function changeTurma(){
+	// select.value --> turma selecionada
+	// criar os graficos aqui dentro
+
+}
