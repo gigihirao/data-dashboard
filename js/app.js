@@ -32,6 +32,7 @@ const sedes = {
 	SCL: "SANTIAGO",
 };
 var sede = window.location.hash.substr(1);
+document.getElementById("nameSede").textContent = sedes[sede];
 
 var select = document.getElementById("turmas");
 for (var turma in data[sede]) {
