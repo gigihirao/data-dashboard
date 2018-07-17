@@ -7,12 +7,12 @@
 body {
 	background-color: #f7f7f7;
 	margin: 0;
-	font-family: Comic Sans MS, cursive, sans-serif;
+	font-family: 'Quicksand', sans-serif;
 }
 
 #menu {
 	width: 20%;
-	height: 650px;
+	height: auto;
 	background-color: #e2e2e2;
 	display: flex;
 	flex-direction: column;
@@ -52,9 +52,11 @@ body {
 	padding-right: 25px;
 }
 
-.icon-angle-down {
+.sair {
 	font-size: 20px;
-	padding-top: 12px;
+	padding-top: 80px;
+	text-decoration: none;
+	color: darkolivegreen;
 }
 
 /* STYLE DA PAGINA SEDE */
@@ -109,6 +111,7 @@ body {
 #nameSede {
 	padding-left: 25px;
 	font-size: 30px;
+	font-family: 'Quicksand', sans-serif;
 }
 
 .tituloGraph {
@@ -168,4 +171,53 @@ body {
 	padding-right: 10px;
 	text-decoration: none;
 	color: #595959;
+}
+
+.students {
+	background-color: white;
+	border-radius: 5px;
+	border: 6px groove #FFE521;
+	height: auto;
+	margin-top: 20px;
+	padding: 20PX;
+	box-shadow: 2px 0px 10px #888888;
+	width: 200px;
+}
+
+.pie-charts {
+	display: flex;
+	width: 30%;
+	padding-left: 40px;
+}
+
+#turmas {
+	background-color: #b8b8b8;
+	border-color: transparent;
+	width: 150px;
+	height: 30px;
+	font-size: 20px;
+	cursor: pointer;
+}
+
+#turmas:active {
+	background-color: #FFE521;
+
+
+}
+
+#grafics {
+	padding: 25px;
+}
+
+#nps-average {
+	text-align: center;
+	padding: 30px;
+	font-size: 20px;
+
+}
+
+#students-info {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
 }

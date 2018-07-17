@@ -1,47 +1,53 @@
-.background{
-    background-color: #ffe520;
-    margin: 0px;
-    display: flex;
+.background {
+	background-color: #ffe520;
+	margin: 0px;
+	display: flex;
+	width: 100%;
 
 }
 
-.arrows{
-    float: left;
-    opacity: 0.7;
-    height: 650px;
+.arrows {
+	float: left;
+	opacity: 0.7;
+	height: 650px;
+	width: 100%;
 }
 
-.body{    
-    background-color: white;
-    height: 200px;
-    margin-top: 200px;
-    width: 300px;
-    padding-right: 130px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    box-shadow: 6px 6px 10px #4d4908;
-    margin-left: 20px;
+.body {
+	background-color: white;
+	height: 200px;
+	margin-top: 200px;
+	width: 300px;
+	padding-right: 130px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	box-shadow: 6px 6px 10px #4d4908;
+	margin-left: 20px;
+	font-family: 'Quicksand', sans-serif;
+
+
 }
 
-.logo{
-    height: 120px;
+.logo {
+	height: 120px;
 }
 
-.btn{
-    margin-left: 100px;
-    width: 250px;
-    height: 50px;
-    border-radius: 5px;
-    background-color: #ff4577;
-    color: white;
-    font-size: 20px;
-    border: none;
-    box-shadow: 2px 2px 4px gray;
+.btn {
+	margin-left: 100px;
+	width: 250px;
+	height: 50px;
+	border-radius: 5px;
+	background-color: #ff4577;
+	color: white;
+	font-size: 20px;
+	border: none;
+	box-shadow: 2px 2px 4px gray;
 }
 
-a > button{
-    cursor: pointer;
+a > button {
+	cursor: pointer;
 }
-a > button:hover{
-    opacity: 0.7;
+
+a > button:hover {
+	opacity: 0.7;
 }

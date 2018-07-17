@@ -10,6 +10,8 @@
 	<link href="https://file.myfontastic.com/BUhrNSxb5CqWytLmgo8xLb/icons.css" rel="stylesheet">
 	<!--	img da aba -->
 	<link rel="icon" type="image/jpg" href="assets/images/logo.png" />
+	<!--	fonte-->
+	<link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
 </head>
 
 <body>
@@ -20,10 +22,12 @@
 				<img src="assets/images/vanessa.jpg" alt="perfil" id="photoPerfil">
 				<p class="name">Vanessa </p>
 
-				<i class="icon-angle-down"></i>
+				<a href="index.html" class="sair">Sair</a>
 			</div>
 			<p class="titulosMenu">Selecione uma turma:</p>
-			<select id="turmas" onchange="changeTurma()"></select>
+			<select id="turmas" onchange="changeTurma()">
+				<option>Selecionar</option>
+			</select>
 		</div>
 		<div id="classes">
 			<div id="topo">
@@ -32,9 +36,20 @@
 					<a href="sede.html"  class="icon-chevron-right">SEDES</a>
 				</span>
 			</div>
+
 			<div id="grafics">
 				<canvas class="line-chart"></canvas>
 			</div>
+
+			<div id="nps-average">
+				<span id="nps-average-value"><strong></strong></span>
+			</div>
+			<div class="pie-charts">
+				<canvas id="non-active-students"></canvas>
+				<canvas id="passing-students-tech"></canvas>
+				<canvas id="passing-students-hse"></canvas>
+			</div>
+			<div id="students-info"></div>
 
 		</div>
 
