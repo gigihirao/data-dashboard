@@ -19,15 +19,7 @@ if (sede == "#SCL") {
 	classes(SCL);
 }
 
-var ctx = document.getElementsByClassName("line-chart");
-//type, data, option
-var chartGraph = new Chart(ctx, {
-	type: 'line',
-	data: {
-		labels: [sprint 1, sprint 2],
-	}
 
-});
 
 function classes(sede) {
 
@@ -47,4 +39,20 @@ for (var turma in data[sede]) {
 	option.value = turma;
 	option.textContent = turma;
 	select.appendChild(option);
+}
+
+
+function changeTurma() {
+	// select.value --> turma selecionada
+	// criar os graficos aqui dentro
+	var ctx = document.getElementsByClassName("line-chart");
+	//type, data, option
+	var chartGraph = new Chart(ctx, {
+		type: 'line',
+		data: {
+			labels: [sprint1, sprint2],
+		}
+
+	});
+
 }
