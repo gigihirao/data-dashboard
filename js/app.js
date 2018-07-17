@@ -1,32 +1,5 @@
-var sede = window.location.hash;
-var tituloSede = document.getElementById("nameSede");
-
-
-if (sede == "#AQP") {
-	tituloSede.innerHTML = "AREQUIPA";
-	classes(AQP);
-}
-if (sede == "#CDMX") {
-	tituloSede.innerHTML = "CIDADE DO MÉXICO";
-	classes(CDMX);
-}
-if (sede == "#LIM") {
-	tituloSede.innerHTML = "LIMA";
-	classes(LIM);
-}
-if (sede == "#SCL") {
-	tituloSede.innerHTML = "SANTIAGO";
-	classes(SCL);
-}
-
-
-
-function classes(sede) {
-
-}
-
 const sedes = {
-	AQP: "AQUERIPA",
+	AQP: "AREQUIPA",
 	CDMX: "CIDADE DO MÉXICO",
 	LIM: "LIMA",
 	SCL: "SANTIAGO",
@@ -44,6 +17,8 @@ for (var turma in data[sede]) {
 
 
 function changeTurma() {
+//	var teacher = select.value[students][ratings][teacher];
+//	console.log(teacher);
 	// select.value --> turma selecionada
 	// criar os graficos aqui dentro
 	var ctx = document.getElementsByClassName("line-chart");
@@ -51,9 +26,26 @@ function changeTurma() {
 	var chartGraph = new Chart(ctx, {
 		type: 'line',
 		data: {
-			labels: [sprint1, sprint2],
+			title: {
+				text: 'notas blá blá'
+			},
+			labels: [`sprint 1`, `sprint 2`, 'sprint 3', 'sprint 4', 'sprint 5'],
+			datasets: [
+				{
+					label: "TEACHER",
+					data: [3.5, 5, 3.5, 2.2, 3],
+					borderWidth: 6,
+					borderColor: 'rgba(255,0,158)',
+					backgroundColor: 'transparent',
+				},
+				{
+					label: "JEDI",
+					data: [2.5, 4, 3, 4, 2.5],
+					borderWidth: 6,
+					borderColor: 'rgba(86,248,154)',
+					backgroundColor: 'transparent',
+				},
+			]
 		}
-
 	});
-
 }
