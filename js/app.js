@@ -121,7 +121,7 @@ function changeTurma() {
 			}]
 		},
 	});
-
+	//APRESENTANDO ALUNAS NA TELA
 	var studentsInfo = document.getElementById("students-info");
 	var students = data[sede][select.value]["students"];
 	studentsInfo.innerHTML = "";
@@ -131,6 +131,7 @@ function changeTurma() {
 		div.setAttribute("class", "students");
 		//		Nome da Aluna
 		var p = document.createElement("p");
+		p.setAttribute("class", "nameStudent");
 		var name = data[sede][select.value]["students"][student]["name"];
 		console.log(name);
 		p.innerHTML = name;
@@ -138,13 +139,21 @@ function changeTurma() {
 		//		Foto da Aluna
 		var img = document.createElement("img");
 		var photo = data[sede][select.value]["students"][student]["photo"];
+		img.setAttribute("class", "imgStudent");
 		img.src = photo;
 		div.appendChild(img);
 		//		Alunas ativas
-		var p = document.createElement("p");
+		var ativo = document.createElement("p");
 		var active = data[sede][select.value]["students"][student]["active"];
-		p.innerHTML = "Alunas Ativa: " + active;
-		div.appendChild(p);
+		if (active == true) {
+			ativo.setAttribute("class", "studentTrue");
+			ativo.innerHTML = "Aluna Ativa"
+			div.appendChild(ativo);
+		} else {
+			ativo.setAttribute("class", "studentFalse");
+			ativo.innerHTML = "Aluna Inativa"
+			div.appendChild(ativo);
+		}
 		//			Sprint
 		var sprintsStudents = students[student]["sprints"];
 		for (var sprintStudent in sprintsStudents) {
@@ -154,7 +163,7 @@ function changeTurma() {
 			var p2 = document.createElement("p");
 			var h4 = document.createElement("h4");
 			var sp = parseInt(sprintStudent) + 1;
-			h4.innerHTML = "Sprint" + sp;
+			h4.innerHTML = "Sprint " + sp;
 			p1.innerHTML = "Nota Tech: " + tech;
 			p2.innerHTML = "Nota HSE: " + hse;
 			div.appendChild(h4);

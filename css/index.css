@@ -2,7 +2,7 @@
 	background-color: #ffe520;
 	margin: 0px;
 	display: flex;
-	width: 100%;
+
 
 }
 
@@ -24,7 +24,7 @@
 	box-shadow: 6px 6px 10px #4d4908;
 	margin-left: 20px;
 	font-family: 'Quicksand', sans-serif;
-
+	margin-right: 30px;
 
 }
 

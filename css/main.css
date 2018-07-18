@@ -176,12 +176,14 @@ body {
 .students {
 	background-color: white;
 	border-radius: 5px;
-	border: 6px groove #FFE521;
 	height: auto;
 	margin-top: 20px;
-	padding: 20PX;
+	padding: 20px;
 	box-shadow: 2px 0px 10px #888888;
-	width: 200px;
+	width: 230px;
+	display: flex;
+	flex-direction: column;
+	margin: 20px;
 }
 
 .pie-charts {
@@ -199,12 +201,6 @@ body {
 	cursor: pointer;
 }
 
-#turmas:active {
-	background-color: #FFE521;
-
-
-}
-
 #grafics {
 	padding: 25px;
 }
@@ -219,5 +215,31 @@ body {
 #students-info {
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-between;
+	justify-content: space-around;
+
+}
+
+.nameStudent {
+	font-size: 20px;
+	border-bottom: 2px solid #ffe521;
+}
+
+.studentTrue {
+	border: 2px outset #ffe521;
+	/*	background-color: ;*/
+	text-align: center;
+}
+
+
+.studentFalse {
+	border: 1px outset #CCC;
+	background-color: #f7f7f7;
+	text-align: center;
+}
+
+.imgStudent {
+	width: 150px;
+	height: 150px;
+	align-self: center;
+
 }
