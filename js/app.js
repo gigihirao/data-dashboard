@@ -124,7 +124,7 @@ function changeTurma() {
 
 	var studentsInfo = document.getElementById("students-info");
 	var students = data[sede][select.value]["students"];
-
+	studentsInfo.innerHTML = "";
 	for (var student in students) {
 
 		var div = document.createElement("div");
